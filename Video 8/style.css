@@ -1,0 +1,35 @@
+/* .text-1{
+    background-color: antiquewhite;
+}
+
+.btn{
+    color: #fff;
+    background-color: purple;
+    border: none;
+    padding: 20px 30px;
+}
+
+.border-text{
+    border: 2px solid red;
+    text-align: center;
+}
+
+
+#textHero{
+    background-color: red;
+}
+ */
+
+
+ #wrapper .navbar{
+    background-color: red;
+
+ }
+
+ .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+ }
