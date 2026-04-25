@@ -1,0 +1,163 @@
+ * ::selection {
+
+            background: #ff4444;
+            color: #fff;
+
+        }
+
+        /* Universal Selector */
+        * {
+            background-color: #111;
+            color: #fff;
+        }
+
+
+        /* Element Selector to Select Specific Types */
+
+        p {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: "poppins";
+            font-style: italic;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        .part-two {
+            background-color: red;
+            text-align: center;
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: white;
+            font-family: "poppins";
+        }
+
+
+        /* #part-two{
+    background-color: peru;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: "poppins";
+
+} */
+
+
+        .part-two h1 {
+            color: red;
+        }
+
+
+        /* Descendent Selectors */
+
+        section p {
+            color: blanchedalmond;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 10vw;
+        }
+
+        main p {
+            color: gold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 5vw;
+        }
+
+
+        /* Child Selectors */
+
+        ul>li {
+            list-style: none;
+        }
+
+
+        /* Adjacent Selector */
+
+        h1+p {
+            font-size: 5rem;
+            font-family: "poppins";
+        }
+
+
+        /* General Sibling Selector */
+        h1~p {
+            color: #888;
+        }
+
+
+        /* Attribute Selectors */
+
+        input[required] {
+            border: 2px solid red;
+        }
+
+        /* Pseudo Selectors*/
+
+        /* .btn{
+    font-size: 16px;
+    padding: 20px 40px;
+    border: 1px solid rgba(17, 128, 193, 0.718);
+    border-radius: 16px;
+
+}
+
+.btn:hover{
+    font-size: 20px;
+    border: none;
+    outline: none;
+
+} */
+
+        a:hover {
+            background-color: red;
+        }
+
+        input:focus {
+            outline: 2px solid blue;
+        }
+
+        button:active {
+            transform: scale(1.5);
+        }
+
+
+        /* first and last child selectors */
+
+        li:first-child {
+            font-weight: bold;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+
+        li:nth-child(2) {
+            color: blue;
+        }
+
+        /* 2nd item */
+        li:nth-child(odd) {
+            background: #19ba13;
+        }
+
+        /* odd rows */
+        li:nth-child(even) {
+            background: #d00762;
+        }
+
+        /* even rows */
+
+
+        .section-title h1::before {
+            content: "aa";
+            color: #ff4444;
+        }
+
+        .section-title h1::after {
+            content: "aa";
+            color: #ff4444;
+        }
