@@ -1,0 +1,60 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            font-family: "poppins";
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        div {
+            margin: 40px;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 5vw;
+            font-family: "poppins";
+            letter-spacing: -3px;
+        }
+
+
+        .text-red {
+            color: red;
+        }
+
+
+        .text-blue {
+            color: blue;
+        }
+
+/* 
+        #text-color {
+            color: rgb(24, 194, 101) !important;
+        } */
+
+
+        .text-yellow {
+            color: yellow;
+        }
+
+        /* Inline CSS > ID > Class > Attributes > element selector > Universal Selector */
+
+.wrapper {
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+
+.wrapper p{
+color: inherit;
+font-family: inherit;
+font-size: inherit;
+}
