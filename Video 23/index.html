@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins";
+            background-color: black;
+            color: #fff;
+        }
+
+        .container {
+            border: 2px solid red;
+            font-size: 4rem;
+            display: inline-block;
+            padding: 50px;
+            margin: 50px;
+            /* display: none; */
+            /* visibility: hidden; */
+
+        }
+
+        /* span {
+            display: block;
+            border: 2px solid purple;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Main Wrapper
+    </div>
+
+    <span>Hey Hello</span>
+    <span>I am a Developer</span>
+
+    <div style="display: flex; justify-content: center; align-items: center; background: #111; padding: 10px;">
+        <span style="color: white;">Logo</span>
+        <nav style="display: flex; gap: 20px;">
+            <a href="#" style="color: white;">Home</a>
+            <a href="#" style="color: white;">About</a>
+            <a href="#" style="color: white;">Contact</a>
+        </nav>
+    </div>
+
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        <div style="background: coral; padding: 20px;">1</div>
+        <div style="background: skyblue; padding: 20px;">2</div>
+        <div style="background: lightgreen; padding: 20px;">3</div>
+        <div style="background: plum; padding: 20px;">4</div>
+        <div style="background: peachpuff; padding: 20px;">5</div>
+        <div style="background: khaki; padding: 20px;">6</div>
+    </div>
+</body>
+
+</html>
