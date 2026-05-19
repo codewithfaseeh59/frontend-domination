@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            font-family: "poppins";
+            /* font-size: 3rem; */
+
+        }
+
+        /* @media only|not screen|print|all and (max-width:984px){
+            your css code
+        } */
+
+        /* @media screen and (max-width:768px){
+            body{
+                background-color: white;
+                text-align: center;
+            }
+        } */
+
+
+        /* @media screen and (orientation: landscape) {
+            body {
+                background-color: white;
+                text-align: center;
+            }
+        } */
+
+        @media screen and (max-width:768px) {
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .boxes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border: 2px solid white;
+            margin: 4px;
+        }
+
+        h1{
+font-size: clamp(5rem, 8vw, 5rem);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hey Hello</h1>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

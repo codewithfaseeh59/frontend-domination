@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Nav</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Poppins, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #111111;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      color: #aaaaaa;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .hamburger {
+      display: none;          /* hidden on desktop */
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 2px;
+      background: #ffffff;
+      border-radius: 2px;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      nav {
+        padding: 16px 20px;
+      }
+
+      .hamburger {
+        display: flex;         /* show on mobile */
+      }
+
+      .nav-links {
+        display: none;         /* hide links on mobile */
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #111111;
+        padding: 24px 20px;
+        gap: 20px;
+      }
+
+      .nav-links.open {
+        display: flex;         /* JS toggles this class */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">VROO.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</body>
+</html>
