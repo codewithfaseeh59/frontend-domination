@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg:#43cf11;
+    --text-color:#ab1111;
+    --border:22px solid red;
+    --op:0.5;
+    --text-xl:5rem;
+    --letter-spacing:-5px;
+    --def-padding:200px;
+}
+
+body{
+    font-family: "poppins";
+}
+
+.navbar{
+    /* padding: 20px 40px; */
+    padding: var(--def-padding);
+    border: var(--border);
+    
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: var(--text-xl);
+    letter-spacing: var(--letter-spacing);
+}
+
+.navbar ul li:first-child{
+    --text-color:#920fd8;
+    color: var(--text-color);
+}
+
+.mainContainer{
+    font-size: 24px;
+}
+
+button{
+    padding: 20px 40px;
+    font-size: 20px;
+    color: var(--text-color);
+background-color: var(--primary-bg);
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="mainContainer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam. At dolor provident laudantium tempora dolore aut libero veniam ratione odit, explicabo, nobis dolores, necessitatibus quam voluptatibus quasi consequuntur iure consequatur recusandae ex corporis.
+    </div>
+
+    <button>
+        Sign Up
+    </button>
+</body>
+</html>
